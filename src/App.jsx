@@ -22,12 +22,23 @@ function Header(){
   );
 }
 
-function CoreConcepts(props){
+// function CoreConcepts(props){
+//   return(
+//     <li>
+//       <img src={props.image} alt={props.title}/>
+//       <h3>{props.title}</h3>
+//       <p>{props.description}</p>
+//     </li>
+//   )
+// }  
+// uper trah b kar sakde te niche trah b
+
+function CoreConcepts({image,title,description}){
   return(
     <li>
-      <img src={props.image} alt={props.title}/>
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
+      <img src={image} alt={title}/>
+      <h3>{title}</h3>
+      <p>{description}</p>
     </li>
   )
 }
